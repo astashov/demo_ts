@@ -6,9 +6,9 @@ class Apple {
   }
 }
 
-class Smallie extends Apple {
-  public bar(): number {
-    return 8;
+class Biggie extends Apple {
+  public foo(): number {
+    return super.foo() + 4;
   }
 }
 
