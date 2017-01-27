@@ -1,4 +1,5 @@
 import * as imm from "immutable";
+import {Set} from "immutable";
 
 class Apple {
   public foo(): number {
@@ -14,6 +15,10 @@ class Biggie extends Apple {
 
 function bar(): imm.List<number> {
   return imm.List.of(2,3,4);
+}
+
+function zap(): Set<number> {
+  return Set.of(3);
 }
 
 function main(): void {
